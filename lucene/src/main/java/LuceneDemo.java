@@ -77,9 +77,9 @@ public class LuceneDemo {
         //3、创建一个IndexSearcher对象，构造方法中的参数indexReader对象。
         IndexSearcher indexSearcher = new IndexSearcher(indexReader);
         //4、创建一个Query对象，TermQuery
-        Query query = new TermQuery(new Term("fileContext","apache"));
+        Query query = new TermQuery(new Term("fileContext","spring"));
         //5、执行查询，得到一个TopDocs对象
-        TopDocs topDocs = indexSearcher.search(query, 10);
+        TopDocs topDocs = indexSearcher.search(query, 3);
         //6、取查询结果的总记录数
         long totalHits = topDocs.totalHits;
         System.out.println("查询总条数："+totalHits);
@@ -126,5 +126,6 @@ public class LuceneDemo {
         }
         tokenStream.close();
     }
+
 
 }

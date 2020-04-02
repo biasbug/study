@@ -1,0 +1,21 @@
+myname: system
+
+person:
+  name: admin
+  adre: hangzhou
+  age: 28
+
+map:
+  key1: value1
+  key2: value2
+
+
+city:
+  - 上海
+  - 杭州
+
+persons:
+  - name: lisi
+    age: 18
+  - name: zhangsan
+    age: 19
